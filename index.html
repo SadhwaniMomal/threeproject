@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            margin: 300px 300px;
+        }
+
+        .container img {
+            width: 34%;
+            height: 50%;
+        }
+
+        .content {
+            background-color: aqua;
+            font-size: larger;
+            font-family: sans-serif;
+            font-weight: bold;
+            display: none;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .container .content {
+            width: 34%;
+            height: 99%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            cursor: pointer;
+        }
+
+        .container:hover .content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="img.jpg" alt="Webimage">
+        <div class="content">
+            <h2>I am image in webpage</h2>
+        </div>
+    </div>
+</body>
+
+</html>
